@@ -1,13 +1,4 @@
-//! # LNURL Client
-//!
-//! A command-line client for Lightning Network (LN) URL protocols. It talks to a local
-//! Core Lightning (CLN) node via Unix socket RPC and performs HTTP requests to LNURL
-//! servers for:
-//! - **Channel request**: open an inbound channel with a remote LNURL service
-//! - **Withdraw request**: receive a payment from a service by providing a BOLT11 invoice
-//! - **Auth request**: prove ownership of the node by signing a challenge (LNURL-auth style)
-//!
-//! The server base URL can be given as a full URL or as `host:port` (IPv4/IPv6).
+//! LNURL client: channel request, withdraw, auth. 
 
 use serde::Deserialize;
 use cln_rpc::ClnRpc;
